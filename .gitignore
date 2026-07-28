@@ -1,0 +1,6 @@
+.env
+chroma_store/
+venv/
+__pycache__/
+*.pyc
+.streamlit/
