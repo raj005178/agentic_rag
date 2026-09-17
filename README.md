@@ -189,7 +189,7 @@ Open your browser at `http://localhost:8501`
 ### Switch Groq model
 In `pipeline/llm.py`:
 ```python
-GROQ_MODEL = "llama-3.1-8b-instant"        # default — fast, free
+GROQ_MODEL = "llama-3.3-70b-versatile"        # default — fast, free
 GROQ_MODEL = "mixtral-8x7b-32768"    # smarter, 32k context window
 GROQ_MODEL = "llama3-70b-8192"       # most capable
 ```
@@ -213,7 +213,7 @@ def parent_child_chunking(
 
 | Component | Technology |
 |---|---|
-| LLM API | [Groq](https://groq.com) (llama3-8b-8192) |
+| LLM API | [Groq](https://groq.com) (llama-3.3-70b-versatile) |
 | Offline LLM | [TinyLlama 1.1B](https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0) |
 | Embeddings | [all-MiniLM-L6-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2) |
 | Reranker | [ms-marco-MiniLM-L-6-v2](https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2) |
