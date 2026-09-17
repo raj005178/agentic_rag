@@ -1,6 +1,6 @@
 """
 llm.py — Smart LLM router
-  Primary  : Groq API (llama-3.1-8b-instant / mixtral-8x7b-32768)
+  Primary  : Groq API (llama-3.3-70b-versatile / mixtral-8x7b-32768)
   Fallback : TinyLlama 1.1B (local, CPU-safe, ~600 MB)
 """
 
@@ -14,7 +14,7 @@ _groq_client = None
 _local_model = None
 _local_tokenizer = None
 
-GROQ_MODEL = "llama-3.1-8b-instant"   # swap to "mixtral-8x7b-32768" for longer context
+GROQ_MODEL = "llama-3.3-70b-versatile"   # swap to "mixtral-8x7b-32768" for longer context
 LOCAL_MODEL = "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
 
 
